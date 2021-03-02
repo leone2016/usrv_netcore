@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6qrY/XN2TeZ3bbUA446b76NE0nFafhawezL1+Pk0c4Y9mnd22by1ubABg0z10Qz0E21+UuyuX82O0PnwvMjCYg==",
+  "success": true,
+  "projectFilePath": "D:\\Leonardo\\Documentos\\UDEMY\\USSRV-NETCORE\\USRV-STORE\\src\\Basket\\Basket.API\\Basket.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leoz3\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.11\\microsoft.netcore.app.host.win-x64.3.1.11.nupkg.sha512"
+  ],
+  "logs": []
+}

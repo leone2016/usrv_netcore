@@ -1,0 +1,76 @@
+
+Mongo Timeout Error - A timeout occured after 30000ms selecting a server using CompositeServerSelector
+________________________________________________________________________________________________________________________________________________
+Hi,
+
+Some of students getting timeout error (MongoDB.Driver.MongoConnectionException: An exception occurred while opening a connection to the server.) when its try to seeding the database (SeedData method) from mongodb. I do fresh setup into my computer and try again but it worked well for me so thats why ı cant reproduce the error.
+When I checked from google, I saw below links and solutions;
+
+Links;
+https://stackoverflow.com/questions/31314245/a-timeout-occured-after-30000ms-selecting-a-server-using-compositeserverselector
+http://mongodb.github.io/mongo-csharp-driver/2.10/reference/driver/connecting/#re-use.
+https://www.thetopsites.net/article/50908658.shtml
+https://www.xspdf.com/help/50908658.html
+https://mongodb.github.io/mongo-csharp-driver/2.10/reference/driver/error_handling/
+
+________________________________________________________________________________________________________________________________________________
+Solutions:
+
+Solution 1 - Add connection string to "?connect=replicaSet" :
+
+Please refer below solutions with overriding our existing connectionSting in CatalogContext.cs when getting client in here "var client = new MongoClient(settings.ConnectionString);".
+In below solutions they try with adding db name at the end of connection string, maybe it can solve.
+new MongoClient("mongodb://username:password@ds011111.mongolab.com:11111/db-name")
+
+---------- ---------- ----------
+
+Add "?connect=replicaSet" to the end of your connection string if connecting to MongoLab.
+
+new MongoClient("mongodb://username:password@ds011111.mongolab.com:11111/db-name?connect=replicaSet")
+This JIRA ticket has some details: https://jira.mongodb.org/browse/CSHARP-1160
+
+Basically the default is to connect to a replica set member. But MongoLab's Single-Node settings are actually a single node replica set and this causes us to not trust it. Appending ?connect=replicaSet to your connection string will force the driver to move into replica set mode and all will work.
+
+---------- ---------- ----------
+
+I am replacing the connection string method in like below.
+
+new MongoClient("mongodb://username:password@ds011111.mongolab.com:11111/db-name")
+Now it's solved.
+
+Please see the answer from Paul Lemke.
+
+[CSHARP-2540] A timeout occured after 30000ms selecting a server , Add "?connect=replicaSet" to the end of your connection string if connecting to MongoLab. A timeout occured after 30000ms selecting a server using CompositeServerSelector{ Selectors = MongoDB.Driver.
+
+________________________________________________________________________________________________________________________________________________
+Solution 2 :
+
+If these solutions are not worked for you, please change the port-forwarding port number different form 27017 to different number as below way and try again;
+
+services:
+    catalogdb:
+        container_name: catalogdb
+        restart: always
+        volumes:
+            - ${WEBAPP_STORAGE_HOME}/site:/data/db
+        ports:
+            - "27018:27017"
+
+________________________________________________________________________________________________________________________________________________
+Solution 3 :
+
+Check your firewall settings.
+It seams your code failed on the socket connection...Check if the mongoDB port is opened on the firewall (possibly not)...
+
+Most replies mention about network permissions, Could you please check how you can give access permission to mongo db driver ? Because you even cant connect to interactive terminal so maybe the problem is only related with network permissions.
+
+https://grandnode.com/boards/topic/5c12194fc80eac06d0149cad/a-timeout-occured-after-30000ms-selecting-a-server-using-compositeserverselector
+________________________________________________________________________________________________________________________________________________
+Solution 4 :
+
+In case anyone is getting a Mongo Timeout Error, replace the colon on CatalogDatabaseSettings:ConnectionString with double underscores like so CatalogDatabaseSettings__ConnectionString.
+
+For interactive terminal you should use linux based container system of docker
+
+________________________________________________________________________________________________________________________________________________
+

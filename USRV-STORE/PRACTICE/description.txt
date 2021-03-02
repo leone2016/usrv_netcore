@@ -1,0 +1,29 @@
+For the "The serializer for field must implement IBsonArraySerializer" error, the Mongo DB Provider could be cause of the problem. So I found 2 solution what we can apply that should modify the code of ProductRepository.cs. 
+
+You should modify the below line with different Filter type, because ElemMatch function give an error.
+
+            FilterDefinition<Product> filter = Builders<Product>.Filter.ElemMatch(p => p.Category, categoryName);
+
+For modification of code please refer below links;
+
+https://stackoverflow.com/questions/48740726/cmongodb-implement-ibsonarrayserializer
+
+https://jira.mongodb.org/browse/CSHARP-1521
+
+ProductRepository.cs
+
+    public async Task<IEnumerable<Product>> GetProductByCategory(string categoryName)
+
+        {
+
+            FilterDefinition<Product> filter = Builders<Product>.Filter.ElemMatch(p => p.Category, categoryName);
+
+            return await _context
+
+                            .Products
+
+                            .Find(filter)
+
+                            .ToListAsync();
+
+        }
