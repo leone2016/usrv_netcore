@@ -1,4 +1,7 @@
 
+# Microservices Architecture and Implementation oin .Net 5
+![Main Logic Of RabbitMQ](documentation/Screenshot_3.png)
+
  # BUILDING CATALOG USRV
 
 * ASP.NET core WEB API application
@@ -45,6 +48,7 @@ docker exec -it aspnetrun-mongo /bin/bash |  execute (-it) internal terminal for
 `> db.Products.insertMany(...)` | inside folder PRACTICA, there is a file with it
 
 ______________________________________
+______________________________________
 
 # BUILDING Basket USRV
 
@@ -72,12 +76,55 @@ ______________________________________
 * docker stop f4 | stop container with CONTAINER_ID ex: 4e6e1481e4ca `> docker stop 4e`
 
 ______________________________________
+______________________________________
 
 
 ![Tux, the Linux mascot](https://www.rabbitmq.com/img/logo-rabbitmq.svg)
 
+### Microservices Communication with building RabbitMQ Library
+* Microservice communication with RabbitMQ implementation
+* Class Library Development for EventBus operation
+* RabbitMQ Producer on Basket Microservice web API
+* RabbitMQ Consumer on Ordering Microservice web API
+* RabbitMQ Consumer on Ordering Microservice web API
+* AutoMapper implementation when mapping Event to Microservices entity
+* RabbitMq docker implementation
 
+### Main Features
+> similar: Apache kafka, Msmq, Microsoft AzureService Bus, Kestrel, ActiveMQ 
 
+Example ROUTING 
+
+**PUBLISHER** ==> publish => **EXCHANGE** ==>routes=> **QUEUE** ==> consumes ==> **CONSUMER**
+
+### Main Logic of RabbitMQ
+
+* **Producer:** is de source of the message is application producer in here, we can call the publisher, In this project, we are going to as a producer of service, Basket microservice, because Basket microservice checkout the basket, It is produce an Event and it'll be consume from the **Order microservice**, when the checkout performing successfully, so that's ew call the consumer is to send the message.
+  Application that receive and produce the message on the queue
+* **Queue:** is the message stored in here and the sent message are put in queue before they are received, All the incoming message are stored in the queue, That is the memory of the rabbitMQ and we can call the message is it the data we are sending on the queue.
+* **Consumer**
+* **Message**
+* **Exchange:** Is the structure that decide to which queue to send the message because is makes the decision according to do the routing keys: DIRECT, TOPIC, FANOUT
+  * *DIRECT:* is not using any routing pattern and directly sending to queue.
+  * *TOPIC:* this is using the public subscriber pattern, so that's why it is required by subscribing int their queue
+  * *FANOUT:* is using to the broadcasting pattern, so that's why it is sending to them all off to queue
+* **FIFO (First in First out)**
+  
+
+![Main Logic Of RabbitMQ](documentation/Screenshot_1.png)
+
+### Setup with [Docker](https://hub.docker.com/_/rabbitmq) on Local Environment
+* `docker run -d --hostname my-rabbit --name leo-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management`
+* uss: guest ; pass: guest
+
+### Analysis & Design of EventBus Class Library
+
+![Main Logic Of RabbitMQ](documentation/Screenshot_2.png)
+* Create rabbitMQ connection
+* Create BasketCheckout Event
+* Develop Basket Microservices as Producer of BasketCheckout Event
+* Develop Ordering Microservices as Consumer of BasketCheckout Event
+______________________________________
 ______________________________________
 # Run final application
 
