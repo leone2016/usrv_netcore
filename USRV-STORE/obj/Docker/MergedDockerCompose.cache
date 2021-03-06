@@ -1,4 +1,28 @@
 services:
+  basket.api:
+    build:
+      context: D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE
+      dockerfile: src/Basket/Basket.API/Dockerfile
+    depends_on:
+      basketdb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings:Redis: basketdb:6379
+    image: basketapi
+    ports:
+    - published: 8001
+      target: 80
+    volumes:
+    - /.aspnet/https:/root/.aspnet/https/:rw
+    - /.microsoft/usersecrets:/root/.microsft/usersecrets:rw
+  basketdb:
+    container_name: basketdb
+    image: redis
+    ports:
+    - published: 6379
+      target: 63779
+    restart: always
   catalog.api:
     build:
       context: D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE
@@ -8,7 +32,7 @@ services:
         condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      CatalogDataBaseSettings:ConnectionString-mongodb://catalogdb:27017: null
+      CatalogDataBaseSettings:ConnectionString: mongodb://catalogdb:27017
     image: catalogapi
     ports:
     - published: 8000

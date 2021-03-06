@@ -32,15 +32,6 @@
 * Docker-compose file creation
 * Docker-compose file commands
 
-# BUILDING Basket USRV
-
-* ASP.NET core WEB API application
-* REST API principles, CRUD operation
-* REDIS DB noSql database connector on docker
-* N-Layer implementation
-* Repository Design Pattern
-* Swagger Open API implementation
-* DockerFile implementation
 
 ### Mongo CLI **commands on docker**
 
@@ -53,12 +44,44 @@ docker exec -it aspnetrun-mongo /bin/bash |  execute (-it) internal terminal for
 `> db.createCollection(`Productos`)` | create a new DB
 `> db.Products.insertMany(...)` | inside folder PRACTICA, there is a file with it
 
+______________________________________
+
+# BUILDING Basket USRV
+
+* ASP.NET core WEB API application
+* REST API principles, CRUD operation
+* REDIS DB noSql database connector on docker
+* N-Layer implementation
+* Repository Design Pattern
+* Swagger Open API implementation
+* DockerFile implementation
+
+### REDIS - [Docker hub](https://hub.docker.com/_/redis)
+* `docker pull redis`
+* `docker run -p 6379:6379 --name aspnetrun-redis -d redis` 
+* `docker exec -it aspnetrun-redis /bin/bash`
+* `regis-cli` | after execute redis
+* `set key algunaClave` | generate a new key
+* `get key` | get a key
+
+### Redis NuGet
+* StackExchange.Redis
+
+### Run Application on Docker 
+
+* docker stop f4 | stop container with CONTAINER_ID ex: 4e6e1481e4ca `> docker stop 4e`
+
+______________________________________
 
 
-----------------------------------------------
+![Tux, the Linux mascot](https://www.rabbitmq.com/img/logo-rabbitmq.svg)
 
+
+
+______________________________________
 # Run final application
 
+# `docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d`
 * Cone the repository
 * Run command on top of **docker-compose.yml** files; 
 `docker-compose -f docker-compose.yml   -f docker-compose.override.yml up -d`
@@ -68,7 +91,7 @@ docker exec -it aspnetrun-mongo /bin/bash |  execute (-it) internal terminal for
     * `docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d`
 * Basket API -> http://localhost:8001/swagger/index.html
 * Order API -> http://localhost:8002/swagger/index.html
-* API Gatway -> http://localhost:7000/orders?username+swn
+* API Gateway -> http://localhost:7000/orders?username+swn
 * Shopping Web UI -> http//localhost:8003
 
 
@@ -107,6 +130,16 @@ For aspNetCore app after adding docker file -- for single container add containe
     docker-compose up
 
 `docker-compose -f docker-compose.yml   -f docker-compose.override.yml up -d` 
+
+## Redis in Use
+> We can say that REDIS is an Open Source NoSql database and that data origin holds on the memory. As mentioned in its own documentation, that this is not just a simple key-value server. It is more than the key-value directory server
+> the key-value directory server because it has a lot of abilities like storing high-level data structure could be the list, map, sett heap and the json objects and redis is very good performance and in simplicity and automatic manipulation data structures
+> when we compare with the traditional relational database is it provider us a god advantage for using redis, also we can say that redis is using in+memory database, which means that redis store your data on the ram and you can certain the same into your disk
+> it has certain list so you can ensure that data consistency under advantage offer, redis is keeping your data in memory
+> 
+> It is very important because it can reduce to read and write operation up to milliseconds, if you compare it to performance, its normal relational databases for this property, it's really good advantage for redis
+> When you use the right data structure, you can reduce your costs accessing data by up to 10%
+
 
 
 

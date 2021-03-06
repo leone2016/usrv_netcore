@@ -9,6 +9,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Basket.API.Data;
+using Basket.API.Data.Interfaces;
+using Basket.API.Repositories;
+using Basket.API.Repositories.Interfaces;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.OpenApi.Models;
+using StackExchange.Redis;
 
 namespace Basket.API
 {
@@ -24,6 +31,19 @@ namespace Basket.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //redis config
+            services.AddSingleton<ConnectionMultiplexer>(provider =>
+            {
+                var configuration = ConfigurationOptions.Parse(Configuration.GetConnectionString("Redis"), true);
+                return ConnectionMultiplexer.Connect(configuration);
+            });
+
+            services.AddTransient<IBasketContext, BasketContext>();
+            services.AddTransient<IBasketRepository, BasketRepository>();
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo() {Title = "Basket Api", Version = "v1"});
+            });
             services.AddControllers();
         }
 
@@ -39,9 +59,12 @@ namespace Basket.API
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(options =>
             {
-                endpoints.MapControllers();
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "Basket API v1");
             });
         }
     }

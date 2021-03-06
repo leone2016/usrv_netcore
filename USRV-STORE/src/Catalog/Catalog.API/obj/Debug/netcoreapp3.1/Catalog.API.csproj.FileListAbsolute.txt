@@ -7,11 +7,15 @@ D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bi
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\Catalog.API.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\Catalog.API.pdb
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\DnsClient.dll
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\SharpCompress.dll
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
@@ -19,6 +23,7 @@ D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\ob
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\obj\Debug\netcoreapp3.1\Catalog.API.AssemblyInfoInputs.cache
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\obj\Debug\netcoreapp3.1\Catalog.API.AssemblyInfo.cs
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\obj\Debug\netcoreapp3.1\Catalog.API.csproj.CoreCompileInputs.cache
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\obj\Debug\netcoreapp3.1\Catalog.API.MvcApplicationPartsAssemblyInfo.cs
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\obj\Debug\netcoreapp3.1\Catalog.API.MvcApplicationPartsAssemblyInfo.cache
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\obj\Debug\netcoreapp3.1\staticwebassets\Catalog.API.StaticWebAssets.Manifest.cache
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\obj\Debug\netcoreapp3.1\staticwebassets\Catalog.API.StaticWebAssets.xml
@@ -28,8 +33,3 @@ D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\ob
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\obj\Debug\netcoreapp3.1\Catalog.API.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\obj\Debug\netcoreapp3.1\Catalog.API.pdb
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\obj\Debug\netcoreapp3.1\Catalog.API.genruntimeconfig.cache
-D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
-D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
-D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Catalog\Catalog.API\obj\Debug\netcoreapp3.1\Catalog.API.MvcApplicationPartsAssemblyInfo.cs
