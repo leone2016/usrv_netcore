@@ -11,6 +11,7 @@ D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -23,6 +24,7 @@ D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
@@ -34,6 +36,8 @@ D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\EventBusRabbitMq.dll
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\EventBusRabbitMq.pdb
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\obj\Debug\netcoreapp3.1\Basket.API.csprojAssemblyReference.cache
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\obj\Debug\netcoreapp3.1\Basket.API.AssemblyInfoInputs.cache
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\obj\Debug\netcoreapp3.1\Basket.API.AssemblyInfo.cs
@@ -48,3 +52,5 @@ D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\obj\
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\obj\Debug\netcoreapp3.1\Basket.API.dll
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\obj\Debug\netcoreapp3.1\Basket.API.pdb
 D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\obj\Debug\netcoreapp3.1\Basket.API.genruntimeconfig.cache
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Basket\Basket.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

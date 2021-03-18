@@ -68,8 +68,9 @@ ______________________________________
 * `set key algunaClave` | generate a new key
 * `get key` | get a key
 
-### Redis NuGet
+###  NuGet
 * StackExchange.Redis
+* AutoMapper.Extensions.Microsoft.DependencyInjection
 
 ### Run Application on Docker 
 
@@ -113,6 +114,8 @@ Example ROUTING
 
 ![Main Logic Of RabbitMQ](documentation/Screenshot_1.png)
 
+### [tutotial rabbitMq](https://www.rabbitmq.com/tutorials/tutorial-three-dotnet.html)
+
 ### Setup with [Docker](https://hub.docker.com/_/rabbitmq) on Local Environment
 * `docker run -d --hostname my-rabbit --name leo-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management`
 * uss: guest ; pass: guest
@@ -124,6 +127,17 @@ Example ROUTING
 * Create BasketCheckout Event
 * Develop Basket Microservices as Producer of BasketCheckout Event
 * Develop Ordering Microservices as Consumer of BasketCheckout Event
+
+### rabbitMQ NuGet
+* search NuGet RAbbitMQ.Client 6.2.1
+
+### Basket microservice 
+* POST: api/v1/basket/Checkout 
+    * when we have a post operation and this post operation perform the checkout method, It is a use case checkout basket
+    * It means if the customer had a basket and items after reviewing them basket, it's continue to check out the order and click the checkout BUTTON with  
+      giving the other information so it is making an our orders.
+    * So we should have a create checkout method inside of the basket microservice, and this checkout API method (POST: api/v1/basket/Checkout
+      ) should be use the our nre written **CONSUMER MESSAGE** **PublishBasketCheckout**
 ______________________________________
 ______________________________________
 # Run final application
@@ -137,6 +151,7 @@ ______________________________________
 * Catalog API -> http://localhost:8000/swagger/index.html
     * `docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d`
 * Basket API -> http://localhost:8001/swagger/index.html
+    * `docker-compose -f docker-compose.yml -f -d docker-compose.override.yml up --build basket.api`
 * Order API -> http://localhost:8002/swagger/index.html
 * API Gateway -> http://localhost:7000/orders?username+swn
 * Shopping Web UI -> http//localhost:8003
@@ -164,6 +179,8 @@ ______________________________________
 * `dockervolume ls `
 * `docker build <path to docker file>`  | this command is used to build an image from a specified docker file
 * `docker compose up` | this command run multiple container
+* `docker rmi [ID IMAGE]` | after consult images `docker images`, remove image with docker 's image 
+
 
 > Example Bonus Example docker hub pull
 * `docker run -d --hostname swn-rabbit --name swn-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management`

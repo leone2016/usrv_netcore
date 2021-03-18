@@ -1,0 +1,9 @@
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Common\EventBusRabbitMq\bin\Debug\netcoreapp3.1\EventBusRabbitMq.deps.json
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Common\EventBusRabbitMq\bin\Debug\netcoreapp3.1\EventBusRabbitMq.dll
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Common\EventBusRabbitMq\bin\Debug\netcoreapp3.1\EventBusRabbitMq.pdb
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Common\EventBusRabbitMq\obj\Debug\netcoreapp3.1\EventBusRabbitMq.csprojAssemblyReference.cache
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Common\EventBusRabbitMq\obj\Debug\netcoreapp3.1\EventBusRabbitMq.AssemblyInfoInputs.cache
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Common\EventBusRabbitMq\obj\Debug\netcoreapp3.1\EventBusRabbitMq.AssemblyInfo.cs
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Common\EventBusRabbitMq\obj\Debug\netcoreapp3.1\EventBusRabbitMq.csproj.CoreCompileInputs.cache
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Common\EventBusRabbitMq\obj\Debug\netcoreapp3.1\EventBusRabbitMq.dll
+D:\Leonardo\Documentos\UDEMY\USSRV-NETCORE\USRV-STORE\src\Common\EventBusRabbitMq\obj\Debug\netcoreapp3.1\EventBusRabbitMq.pdb
