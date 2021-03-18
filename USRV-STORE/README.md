@@ -140,6 +140,29 @@ Example ROUTING
       ) should be use the our nre written **CONSUMER MESSAGE** **PublishBasketCheckout**
 ______________________________________
 ______________________________________
+
+
+# BUILDING Ordering USRV - With clean architecture and CQRS
+
+* ASP.NET Core Web Api Application 
+* Rest api principles, CRUD operation
+* SQL Server database connection on docker
+* Entity framework core code-first Approach 
+* DDD (Entities, Repositories, Domain/Application Service, DTO's)
+* Clean Architecture implementation with applying SOLID principles ( Core, Application, Infrastructure and Presentation Layer)
+* CQRS implementation on commands and query
+* Swagger open api implementation
+* DockerFile implementatio 
+
+
+###  NuGet
+* 
+
+### Run Application on Docker
+
+______________________________________
+______________________________________
+
 # Run final application
 
 # `docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d`
